@@ -2,16 +2,21 @@ import React from 'react';
 import {
   BrowserRouter as Router,
 } from 'react-router-dom';
+import BasicLayout from './layout/BasicLayout';
 import {router} from './common/router.js';
+
+const handleShowInner = () => (
+  <div>听说读写靠，样样都精通</div>
+);
 
 function App() {
   return (
-    <div>
-      hahahah
-      <Router>
+    <Router>
+      <BasicLayout>
         {router}
-      </Router>
-    </div>
+        {handleShowInner()}
+      </BasicLayout>
+    </Router>
   );
 }
 

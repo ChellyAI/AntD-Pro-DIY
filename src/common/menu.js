@@ -1,15 +1,18 @@
 const menu = [
   {
-    title: '首页',
-    path: '/'
+    name: '首页',
+    path: '/',
+    component: '../router/Home',
   },
   {
-    title: '第一页',
+    name: '第一页',
     path: '/first',
+    component: '../router/Page1',
   },
   {
-    title: '第二页',
+    name: '第二页',
     path: '/second',
+    component: '../router/Page2',
   },
 ];
 

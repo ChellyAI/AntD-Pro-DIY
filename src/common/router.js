@@ -8,7 +8,7 @@ const router = (
   <>
     {
       menu.map((item) => (
-        <Route path={item.path} />
+        <Route path={item.path} component={() => import(item.component)} />
       ))
     }
   </>
